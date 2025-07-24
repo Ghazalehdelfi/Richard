@@ -1,4 +1,4 @@
-# Richard - Your Talking Dictionary
+# Richard - The Talking Dictionary
 
 Richard is a SwiftUI-based iOS application that provides a voice-activated dictionary experience. Simply speak a word, and Richard will look it up and read the definition back to you.
 
@@ -7,8 +7,6 @@ Richard is a SwiftUI-based iOS application that provides a voice-activated dicti
 - **Voice Recognition**: Uses iOS Speech Recognition framework for continuous listening
 - **Dictionary Lookup**: Integrates with the Free Dictionary API for comprehensive word definitions
 - **Text-to-Speech**: Reads definitions aloud using AVSpeechSynthesizer
-- **Clean UI**: Simple, accessible interface with visual state indicators
-- **Error Handling**: Graceful handling of network issues, permission problems, and audio interruptions
 
 ## How It Works
 
@@ -50,13 +48,6 @@ The app follows the MVVM pattern with clean separation of concerns:
 - **TextToSpeechService.swift** - Text-to-speech service using AVSpeechSynthesizer
 - **Info.plist** - App configuration and permissions
 
-## Requirements
-
-- iOS 15.0+
-- Xcode 14.0+
-- Swift 5.7+
-- Device with microphone and speakers/headphones
-
 ## Permissions
 
 The app requires the following permissions:
@@ -74,59 +65,3 @@ Richard uses the [Free Dictionary API](https://dictionaryapi.dev/) which provide
 - Usage examples
 - No API key required
 
-## States
-
-The app has five main states:
-
-1. **Idle** - Ready to start studying
-2. **Listening** - Actively listening for spoken words
-3. **Processing** - Looking up word definition
-4. **Displaying** - Showing and speaking the definition
-5. **Error** - Handling various error conditions
-
-## Error Handling
-
-Richard gracefully handles various error scenarios:
-- Network connectivity issues
-- Words not found in dictionary
-- Microphone permission denied
-- Speech recognition failures
-- Audio session interruptions (calls, etc.)
-
-## Accessibility
-
-- Full VoiceOver support
-- Dynamic Type support for text scaling
-- Semantic labels for all UI elements
-- Reduced motion support
-
-## Development
-
-To run the project:
-
-1. Clone the repository
-2. Open `Richard.xcodeproj` in Xcode
-3. Select a target device or simulator
-4. Build and run (⌘+R)
-
-For testing on device, ensure you have:
-- Valid Apple Developer account
-- Device registered for development
-- Proper code signing configured
-
-## Contributing
-
-This project follows standard iOS development practices:
-- MVVM architecture pattern
-- SwiftUI for UI implementation
-- Async/await for asynchronous operations
-- Combine for reactive programming
-- Protocol-oriented design for services
-
-## License
-
-[Add your license information here]
-
-## Support
-
-For issues or questions, please [create an issue](link-to-issues) in the repository.
