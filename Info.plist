@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+ <key>NSMicrophoneUsageDescription</key>
+ <string>Richard needs microphone access to listen for words you want to look up in the dictionary.</string>
+ <key>NSSpeechRecognitionUsageDescription</key>
+ <string>Richard uses speech recognition to understand the words you speak and provide their definitions.</string>
+ <key>CFBundleIdentifier</key>
+ <string>com.example.Richard</string>
+ <key>CFBundleName</key>
+ <string>Richard</string>
+ <key>CFBundleDisplayName</key>
+ <string>Richard</string>
+ <key>CFBundleExecutable</key>
+ <string>Richard</string>
+</dict>
+</plist>
